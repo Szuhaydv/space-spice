@@ -1,0 +1,99 @@
+.screen {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to top, #09203f 0%, #537895 100%);
+  position: relative;
+  /* position: relative; */
+}
+
+@keyframes rotation {
+  0% {transform: rotate(0);}
+  50% {transform: rotate(90deg)}
+  100% {transform: rotate(90deg)}
+}
+
+@keyframes fillSquare {
+  0% {width: 0px}
+  50% {width: 0px}
+  100% {width: 40px}
+}
+
+.outer-square {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(24, 24, 24);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  animation: rotation 1.2s;
+  animation-iteration-count: infinite;
+}
+
+.inner-square {
+  width: 0px;
+  height: 40px;
+  margin-right: 5px;
+  background-color:#9ef1e5;
+  animation: fillSquare 1.2s;
+  animation-iteration-count: infinite;
+}
+
+.loading {
+  position: absolute;
+  background-color: transparent;
+  color: white;
+  padding-top: 20vh;
+}
+
+.squares {
+  display: flex;
+  margin-right: 20px;
+}
+
+.squares .outer-square {
+  margin-left: 20px;
+}
+
+
+.screen img {
+  transform: rotate(90deg);
+  height: 80%;
+  box-shadow: 0px 0px 8px 10px rgba(0, 0, 0, 0.6);
+  margin-bottom: 10vh;
+}
+
+/* .border {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 50px 125px 50px;
+  border-color: transparent transparent hsla(0, 0%, 0%, 0.702) transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 40px 100px 40px;
+  border-color: transparent transparent blanchedalmond transparent;
+  position: absolute;
+  left: -40px;
+  top: 17px;
+}
+
+.inside {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 20px 50px 20px;
+  border-color: transparent transparent firebrick transparent;
+  position: absolute;
+  left: -20px;
+} */
