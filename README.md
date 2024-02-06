@@ -1,5 +1,7 @@
 # A **Recipe Website** that helps you find what to cook based on *your* ingredients! 🍲 (hosted at: [LINK](https://space-spice.netlify.app/))
 
+A bit longer DEMO available: [HERE](https://youtu.be/fgxX95LU1qo)
+
 Single Page Application built with React | Routing and pages with React Router
 Working with an outside Recipe API | Object Oriented Programming to showcase and work with all the important data | Custom querying search results
 
